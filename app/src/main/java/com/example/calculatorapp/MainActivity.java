@@ -10,6 +10,7 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
+    //Declare a global variable for the display screen output
     String operationText="";
 
     @Override
@@ -19,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    //For calculating the result
     public void Calculate(View view) {
         EditText editText = findViewById(R.id.editTextNumber);
         String temp =  editText.getText().toString();
@@ -33,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    //For displaying the numbers when button is pressed
     public void printBtnValue(View v) {
 
         TextView tv = findViewById(v.getId());
@@ -45,6 +48,7 @@ public class MainActivity extends AppCompatActivity {
         editText.setText(operationText); 
     }
 
+    //Clear values when CLR pressed
     public void clearValues(View view) {
          EditText editText = findViewById(R.id.editTextNumber);
              editText.setText("0");

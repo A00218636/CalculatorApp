@@ -238,7 +238,7 @@
         android:layout_height="65dp"
         android:onClick="calCubeRoot"
 
-        android:text="Cb.Root"
+        android:text="Cb.Rt"
         app:layout_constraintStart_toEndOf="@+id/btnSub"
         app:layout_constraintTop_toBottomOf="@+id/button18" />
 </androidx.constraintlayout.widget.ConstraintLayout>

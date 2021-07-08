@@ -130,6 +130,7 @@
         android:layout_height="65dp"
         android:layout_marginTop="8dp"
         android:text="."
+        android:onClick="printBtnValue"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button7" />
 
@@ -138,7 +139,8 @@
         android:layout_width="65dp"
         android:layout_height="65dp"
         android:layout_marginTop="72dp"
-        android:text="DIV"
+        android:text="/"
+        android:onClick="printBtnValue"
         app:layout_constraintStart_toEndOf="@+id/button3"
         app:layout_constraintTop_toBottomOf="@+id/editTextNumber" />
 
@@ -147,7 +149,8 @@
         android:layout_width="65dp"
         android:layout_height="65dp"
         android:layout_marginStart="4dp"
-        android:text="MUL"
+        android:text="x"
+        android:onClick="printBtnValue"
         app:layout_constraintStart_toEndOf="@+id/button6"
         app:layout_constraintTop_toBottomOf="@+id/btnDiv" />
 
@@ -156,7 +159,8 @@
         android:layout_width="65dp"
         android:layout_height="65dp"
         android:layout_marginStart="4dp"
-        android:text="ADD"
+        android:text="+"
+        android:onClick="printBtnValue"
         app:layout_constraintStart_toEndOf="@+id/button9"
         app:layout_constraintTop_toBottomOf="@+id/btnMul" />
 
@@ -166,16 +170,75 @@
         android:layout_height="65dp"
         android:layout_marginStart="4dp"
         android:layout_marginTop="4dp"
-        android:text="SUB"
+        android:text="-"
+        android:onClick="printBtnValue"
         app:layout_constraintStart_toEndOf="@+id/button11"
         app:layout_constraintTop_toBottomOf="@+id/btnAdd" />
 
     <Button
         android:id="@+id/button14"
-        android:layout_width="270dp"
-        android:layout_height="wrap_content"
+        android:layout_width="135dp"
+        android:layout_height="65dp"
         android:layout_marginTop="4dp"
         android:text="="
+        android:onClick="Calculate"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button10" />
+
+    <Button
+        android:id="@+id/btnBackSpace"
+        android:layout_width="135dp"
+        android:text="DEL"
+        android:onClick="backSpace"
+        android:layout_height="65dp"
+        app:layout_constraintStart_toEndOf="@+id/button14"
+        app:layout_constraintTop_toBottomOf="@+id/btnSub" />
+
+    <Button
+        android:id="@+id/button15"
+        android:layout_width="100dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="72dp"
+        android:onClick="calSin"
+        android:text="SIN"
+        app:layout_constraintStart_toEndOf="@+id/btnDiv"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumber" />
+
+    <Button
+        android:id="@+id/button16"
+        android:layout_width="100dp"
+        android:layout_height="65dp"
+        android:onClick="calCos"
+        android:text="COS"
+        app:layout_constraintStart_toEndOf="@+id/btnMul"
+        app:layout_constraintTop_toBottomOf="@+id/button15" />
+
+    <Button
+        android:id="@+id/button17"
+        android:layout_width="100dp"
+        android:layout_height="65dp"
+        android:onClick="calTan"
+        android:text="TAN"
+        app:layout_constraintStart_toEndOf="@+id/btnAdd"
+        app:layout_constraintTop_toBottomOf="@+id/button16" />
+
+    <Button
+        android:id="@+id/button18"
+        android:layout_width="100dp"
+        android:layout_height="65dp"
+        android:text="Sq.Rt"
+        android:onClick="calSqRoot"
+        app:layout_constraintStart_toEndOf="@+id/btnSub"
+        app:layout_constraintTop_toBottomOf="@+id/button17" />
+
+    <Button
+        android:id="@+id/button19"
+        android:layout_width="100dp"
+        android:layout_height="65dp"
+        android:onClick="calCubeRoot"
+
+        android:text="Cb.Rt"
+        app:layout_constraintStart_toEndOf="@+id/btnSub"
+        app:layout_constraintTop_toBottomOf="@+id/button18" />
 </androidx.constraintlayout.widget.ConstraintLayout>

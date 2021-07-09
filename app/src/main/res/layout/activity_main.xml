@@ -6,6 +6,8 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+
+    <!--    number one button-->
     <Button
         android:id="@+id/button"
         android:layout_width="65dp"
@@ -16,6 +18,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextNumber" />
 
+    <!--    number two button-->
     <Button
         android:id="@+id/button2"
         android:layout_width="65dp"
@@ -26,6 +29,7 @@
         app:layout_constraintStart_toEndOf="@+id/button"
         app:layout_constraintTop_toBottomOf="@+id/editTextNumber" />
 
+    <!--    number three button-->
     <Button
         android:id="@+id/button3"
         android:layout_width="65dp"
@@ -36,6 +40,7 @@
         app:layout_constraintStart_toEndOf="@+id/button2"
         app:layout_constraintTop_toBottomOf="@+id/editTextNumber" />
 
+    <!--    number four button-->
     <Button
         android:id="@+id/button4"
         android:layout_width="65dp"
@@ -46,6 +51,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button" />
 
+    <!--    number five button-->
     <Button
         android:id="@+id/button5"
         android:layout_width="65dp"
@@ -55,6 +61,7 @@
         app:layout_constraintStart_toEndOf="@+id/button4"
         app:layout_constraintTop_toBottomOf="@+id/button2" />
 
+    <!--    number six button-->
     <Button
         android:id="@+id/button6"
         android:layout_width="65dp"
@@ -64,6 +71,7 @@
         app:layout_constraintStart_toEndOf="@+id/button5"
         app:layout_constraintTop_toBottomOf="@+id/button3" />
 
+    <!--    number seven button-->
     <Button
         android:id="@+id/button7"
         android:layout_width="65dp"
@@ -73,6 +81,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button4" />
 
+    <!--    number eight button-->
     <Button
         android:id="@+id/button8"
         android:layout_width="65dp"
@@ -81,7 +90,7 @@
         android:text="8"
         app:layout_constraintStart_toEndOf="@+id/button7"
         app:layout_constraintTop_toBottomOf="@+id/button5" />
-
+    <!--    number nine button-->
     <Button
         android:id="@+id/button9"
         android:layout_width="65dp"
@@ -91,6 +100,7 @@
         app:layout_constraintStart_toEndOf="@+id/button8"
         app:layout_constraintTop_toBottomOf="@+id/button6" />
 
+    <!--    number zero button-->
     <Button
         android:id="@+id/button10"
         android:layout_width="65dp"
@@ -101,6 +111,7 @@
         app:layout_constraintStart_toEndOf="@+id/button12"
         app:layout_constraintTop_toBottomOf="@+id/button8" />
 
+    <!--    To clear number view-->
     <Button
         android:id="@+id/button11"
         android:layout_width="65dp"
@@ -113,6 +124,7 @@
         app:layout_constraintStart_toEndOf="@+id/button10"
         app:layout_constraintTop_toBottomOf="@+id/button9" />
 
+    <!--    Display numbers view-->
     <EditText
         android:id="@+id/editTextNumber"
         android:layout_width="347dp"
@@ -124,6 +136,7 @@
         tools:layout_editor_absoluteX="32dp"
         tools:ignore="MissingConstraints" />
 
+    <!--    Decimal button-->
     <Button
         android:id="@+id/button12"
         android:layout_width="65dp"
@@ -134,6 +147,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button7" />
 
+    <!--  Division button-->
     <Button
         android:id="@+id/btnDiv"
         android:layout_width="65dp"
@@ -144,6 +158,7 @@
         app:layout_constraintStart_toEndOf="@+id/button3"
         app:layout_constraintTop_toBottomOf="@+id/editTextNumber" />
 
+    <!--    Multiplication button-->
     <Button
         android:id="@+id/btnMul"
         android:layout_width="65dp"
@@ -154,6 +169,7 @@
         app:layout_constraintStart_toEndOf="@+id/button6"
         app:layout_constraintTop_toBottomOf="@+id/btnDiv" />
 
+    <!--    ADDITION Button-->
     <Button
         android:id="@+id/btnAdd"
         android:layout_width="65dp"
@@ -164,6 +180,7 @@
         app:layout_constraintStart_toEndOf="@+id/button9"
         app:layout_constraintTop_toBottomOf="@+id/btnMul" />
 
+    <!--    Subtract button-->
     <Button
         android:id="@+id/btnSub"
         android:layout_width="65dp"
@@ -175,6 +192,7 @@
         app:layout_constraintStart_toEndOf="@+id/button11"
         app:layout_constraintTop_toBottomOf="@+id/btnAdd" />
 
+    <!--    To perform operation on two operands-->
     <Button
         android:id="@+id/button14"
         android:layout_width="135dp"
@@ -185,6 +203,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button10" />
 
+    <!--    To clear last digit-->
     <Button
         android:id="@+id/btnBackSpace"
         android:layout_width="135dp"
@@ -194,6 +213,7 @@
         app:layout_constraintStart_toEndOf="@+id/button14"
         app:layout_constraintTop_toBottomOf="@+id/btnSub" />
 
+    <!--    To calculate Sin theta-->
     <Button
         android:id="@+id/button15"
         android:layout_width="100dp"
@@ -205,6 +225,7 @@
         app:layout_constraintStart_toEndOf="@+id/btnDiv"
         app:layout_constraintTop_toBottomOf="@+id/editTextNumber" />
 
+    <!--    To calculate Cos theta-->
     <Button
         android:id="@+id/button16"
         android:layout_width="100dp"
@@ -214,6 +235,7 @@
         app:layout_constraintStart_toEndOf="@+id/btnMul"
         app:layout_constraintTop_toBottomOf="@+id/button15" />
 
+    <!--    To calculate Tan theta-->
     <Button
         android:id="@+id/button17"
         android:layout_width="100dp"
@@ -223,6 +245,7 @@
         app:layout_constraintStart_toEndOf="@+id/btnAdd"
         app:layout_constraintTop_toBottomOf="@+id/button16" />
 
+    <!--    To calculate square root-->
     <Button
         android:id="@+id/button18"
         android:layout_width="100dp"
@@ -232,6 +255,7 @@
         app:layout_constraintStart_toEndOf="@+id/btnSub"
         app:layout_constraintTop_toBottomOf="@+id/button17" />
 
+<!--    To calculate cube root-->
     <Button
         android:id="@+id/button19"
         android:layout_width="100dp"

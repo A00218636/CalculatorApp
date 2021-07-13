@@ -22,11 +22,13 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    //For calculating the result
+    //For performing the Arithmetic operation
     public void Calculate(View view) {
         Double result =0.00;
         EditText editText = findViewById(R.id.editTextNumber);
         String temp =  editText.getText().toString();
+
+        //DIVISION OPERATION
         if(temp.contains("/"))
         {
            int opInd =  temp.indexOf('/');
@@ -35,6 +37,8 @@ public class MainActivity extends AppCompatActivity {
              result = firstOp/secondOp;
 
         }
+
+        //MULTIPLICATION OPERATION
         if(temp.contains("x"))
         {
             int opInd =  temp.indexOf('x');
@@ -43,6 +47,8 @@ public class MainActivity extends AppCompatActivity {
              result = firstOp*secondOp;
 
         }
+
+        //ADDITION OPERATION
         if(temp.contains("+"))
         {
             int opInd =  temp.indexOf('+');
@@ -51,6 +57,8 @@ public class MainActivity extends AppCompatActivity {
              result = firstOp+secondOp;
 
         }
+
+        //SUBTRACTION OPERATION
         if(temp.contains("-"))
         {
             int opInd =  temp.indexOf('-');
@@ -59,10 +67,7 @@ public class MainActivity extends AppCompatActivity {
              result = firstOp-secondOp;
 
         }
-        //EditText editText = findViewById(R.id.editTextNumber);
-        //operationText = operationText + operand.toString();
-       // operationText = operationText + tv.getText();
-//         editText.setText(operand.toString());
+
         editText.setText(result.toString());
 
 
@@ -73,16 +78,15 @@ public class MainActivity extends AppCompatActivity {
     public void printBtnValue(View v) {
 
         TextView tv = findViewById(v.getId());
-       // Double operand = Double.parseDouble((String) tv.getText());
 
         EditText editText = findViewById(R.id.editTextNumber);
-        //operationText = operationText + operand.toString();
+
         operationText = operationText + tv.getText();
-//         editText.setText(operand.toString());
+
         editText.setText(operationText); 
     }
 
-    //Clear values when CLR pressed
+    //Clear all values when CLR pressed
     public void clearValues(View view) {
          EditText editText = findViewById(R.id.editTextNumber);
         operationText ="";
@@ -100,6 +104,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    //CALCULATE SIN THETA
     public void calSin(View view)
     {
         EditText editText = findViewById(R.id.editTextNumber);
@@ -112,6 +117,7 @@ public class MainActivity extends AppCompatActivity {
         editText.setText(String.valueOf(Math.sin(b)));
     }
 
+    //CALCULATE COS THETA
     public void calCos(View view)
     {
         EditText editText = findViewById(R.id.editTextNumber);
@@ -124,6 +130,7 @@ public class MainActivity extends AppCompatActivity {
         editText.setText(String.valueOf(Math.cos(b)));
     }
 
+    //CALCULATE TAN THETA
     public void calTan(View view)
     {
         EditText editText = findViewById(R.id.editTextNumber);
@@ -137,6 +144,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
+    //CALCULATE CUBE ROOT
     public void calCubeRoot(View view)
     {
         EditText editText = findViewById(R.id.editTextNumber);
@@ -144,12 +152,11 @@ public class MainActivity extends AppCompatActivity {
         operationText ="";
         editText.setText("0");
 
-
-        //double b = Math.cbrt(operand);
         String b = String.valueOf(Math.cbrt(operand));
         editText.setText(b);
     }
 
+    //CALCULATE SQUARE ROOT
     public void calSqRoot(View view) {
         EditText editText = findViewById(R.id.editTextNumber);
         Double operand =  Double.parseDouble(editText.getText().toString());
@@ -157,7 +164,7 @@ public class MainActivity extends AppCompatActivity {
         editText.setText("0");
 
         String b = String.valueOf(Math.sqrt(operand));
-       // String b1 = (String) b;
+
         editText.setText(b);
     }
 }

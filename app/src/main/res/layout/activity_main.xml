@@ -8,16 +8,18 @@
     tools:context=".MainActivity">
 
 
-    <!--    number one button-->
+    <!--  INLINE STYLE APPLIED  number one button-->
     <Button
         android:id="@+id/button"
-        android:style="@style/GreenText"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="8dp"
         android:layout_width="65dp"
         android:layout_height="65dp"
         android:layout_marginTop="72dp"
         android:onClick="printBtnValue"
-        android:text="1[In-Line]"
-        android:textSize="10sp"
+        android:text="1"
+        android:textSize="15sp"
         android:textColor="@color/black"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextNumber" />
@@ -25,7 +27,7 @@
     <!--    number two button-->
     <Button
         android:id="@+id/button2"
-        android:style="@style/GreenText"
+        style="@style/GreenText"
         android:layout_width="65dp"
         android:layout_height="65dp"
         android:layout_marginTop="72dp"
@@ -37,7 +39,7 @@
     <!--    number three button-->
     <Button
         android:id="@+id/button3"
-        android:style="@style/GreenText"
+        style="@style/GreenText"
         android:layout_width="65dp"
         android:layout_height="65dp"
         android:layout_marginTop="72dp"
@@ -54,7 +56,7 @@
         android:onClick="printBtnValue"
 
         android:text="4"
-        android:style="@style/MaroonText"
+        style="@style/MaroonText"
 
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button" />
@@ -65,7 +67,7 @@
         android:layout_width="65dp"
         android:layout_height="65dp"
         android:onClick="printBtnValue"
-        android:style="@style/MaroonText"
+        style="@style/MaroonText"
         android:text="5"
         app:layout_constraintStart_toEndOf="@+id/button4"
         app:layout_constraintTop_toBottomOf="@+id/button2" />
@@ -76,7 +78,7 @@
         android:layout_width="65dp"
         android:layout_height="65dp"
         android:onClick="printBtnValue"
-        android:style="@style/MaroonText"
+        style="@style/MaroonText"
         android:text="6"
         app:layout_constraintStart_toEndOf="@+id/button5"
         app:layout_constraintTop_toBottomOf="@+id/button3" />
@@ -88,7 +90,7 @@
         android:layout_height="65dp"
         android:onClick="printBtnValue"
         android:text="7"
-        android:style="@style/DarkBlueText"
+        style="@style/DarkBlueText"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button4" />
 
@@ -99,7 +101,7 @@
         android:layout_height="65dp"
         android:onClick="printBtnValue"
         android:text="8"
-        android:style="@style/DarkBlueText"
+        style="@style/DarkBlueText"
         app:layout_constraintStart_toEndOf="@+id/button7"
         app:layout_constraintTop_toBottomOf="@+id/button5" />
     <!--    number nine button-->
@@ -110,7 +112,7 @@
 
         android:onClick="printBtnValue"
         android:text="9"
-        android:style="@style/DarkBlueText"
+        style="@style/DarkBlueText"
         app:layout_constraintStart_toEndOf="@+id/button8"
         app:layout_constraintTop_toBottomOf="@+id/button6" />
 
@@ -122,7 +124,7 @@
 
         android:onClick="printBtnValue"
         android:text="0"
-        android:style="@style/RedText"
+        style="@style/RedText"
         app:layout_constraintStart_toEndOf="@+id/button12"
         app:layout_constraintTop_toBottomOf="@+id/button8" />
 
@@ -135,7 +137,7 @@
 
         android:onClick="clearValues"
         android:text="CLR"
-        android:style="@style/RedText"
+        style="@style/RedText"
         android:textSize="10dp"
         app:layout_constraintStart_toEndOf="@+id/button10"
         app:layout_constraintTop_toBottomOf="@+id/button9" />
@@ -160,7 +162,7 @@
         android:layout_height="65dp"
 
         android:text="."
-        android:style="@style/RedText"
+       style="@style/RedText"
         android:onClick="printBtnValue"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button7" />
@@ -172,7 +174,7 @@
         android:layout_height="65dp"
         android:layout_marginTop="72dp"
         android:text="/"
-        android:style="@style/GreenText"
+        style="@style/GreenText"
         android:onClick="printBtnValue"
         app:layout_constraintStart_toEndOf="@+id/button3"
         app:layout_constraintTop_toBottomOf="@+id/editTextNumber" />
@@ -184,7 +186,7 @@
         android:layout_height="65dp"
 
         android:text="x"
-        android:style="@style/MaroonText"
+        style="@style/MaroonText"
         android:onClick="printBtnValue"
         app:layout_constraintStart_toEndOf="@+id/button6"
         app:layout_constraintTop_toBottomOf="@+id/btnDiv" />
@@ -196,7 +198,7 @@
         android:layout_height="65dp"
 
         android:text="+"
-        android:style="@style/DarkBlueText"
+       style="@style/DarkBlueText"
         android:onClick="printBtnValue"
         app:layout_constraintStart_toEndOf="@+id/button9"
         app:layout_constraintTop_toBottomOf="@+id/btnMul" />
@@ -208,7 +210,7 @@
         android:layout_height="65dp"
 
         android:text="-"
-        android:style="@style/RedText"
+        style="@style/RedText"
         android:onClick="printBtnValue"
         app:layout_constraintStart_toEndOf="@+id/button11"
         app:layout_constraintTop_toBottomOf="@+id/btnAdd" />
@@ -220,7 +222,7 @@
         android:layout_height="65dp"
 
         android:text="="
-        android:style="@style/DarkGreenText"
+        style="@style/DarkGreenText"
         android:onClick="Calculate"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button10" />
@@ -230,7 +232,7 @@
         android:id="@+id/btnBackSpace"
         android:layout_width="138dp"
         android:text="DEL"
-        android:style="@style/DarkGreenText"
+        style="@style/DarkGreenText"
         android:onClick="backSpace"
         android:layout_height="65dp"
         app:layout_constraintStart_toEndOf="@+id/button14"
@@ -245,7 +247,7 @@
         android:layout_marginTop="72dp"
         android:onClick="calSin"
         android:text="SIN"
-        android:style="@style/GreenText"
+        style="@style/GreenText"
         app:layout_constraintStart_toEndOf="@+id/btnDiv"
         app:layout_constraintTop_toBottomOf="@+id/editTextNumber" />
 
@@ -256,7 +258,7 @@
         android:layout_height="65dp"
         android:onClick="calCos"
         android:text="COS"
-        android:style="@style/MaroonText"
+        style="@style/MaroonText"
         app:layout_constraintStart_toEndOf="@+id/btnMul"
         app:layout_constraintTop_toBottomOf="@+id/button15" />
 
@@ -267,7 +269,7 @@
         android:layout_height="65dp"
         android:onClick="calTan"
         android:text="TAN"
-        android:style="@style/DarkBlueText"
+        style="@style/DarkBlueText"
         app:layout_constraintStart_toEndOf="@+id/btnAdd"
         app:layout_constraintTop_toBottomOf="@+id/button16" />
 
@@ -277,7 +279,7 @@
         android:layout_width="100dp"
         android:layout_height="65dp"
         android:text="Sq.Rt"
-        android:style="@style/RedText"
+        style="@style/RedText"
         android:onClick="calSqRoot"
         app:layout_constraintStart_toEndOf="@+id/btnSub"
         app:layout_constraintTop_toBottomOf="@+id/button17" />
@@ -288,7 +290,7 @@
         android:layout_width="100dp"
         android:layout_height="65dp"
         android:onClick="calCubeRoot"
-        android:style="@style/DarkGreenText"
+        style="@style/DarkGreenText"
         android:text="Cb.Rt"
         app:layout_constraintStart_toEndOf="@+id/btnSub"
         app:layout_constraintTop_toBottomOf="@+id/button18" />
